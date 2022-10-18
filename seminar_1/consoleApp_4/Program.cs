@@ -1,4 +1,4 @@
-﻿// выдаёт максимальное из трех чисел
+﻿// выдаёт максимальное из трёх чисел
 Console.WriteLine("Введите число А");
 int a=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -8,4 +8,4 @@ int c=Convert.ToInt32(Console.ReadLine());
 int max=a;
 if (b>max) max=b;
 if (c>max) max=c; 
-Console.WriteLine($"Максимальное число={max}");
+Console.WriteLine($"Максимальное число = {max}");

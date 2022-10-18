@@ -8,7 +8,7 @@ if (a >= b)
 { 
  if (a > b) 
  {
-    Console.WriteLine("А-большее число, B-меньшеее число");
+  Console.WriteLine("А-большее число, B-меньшеее число");
  }  
  else Console.WriteLine("Числа одинаковые");
 }
