@@ -15,7 +15,9 @@ void FillArrayRandom(int[,] array)
 }
 
 int [] GetAverage(int[,] array)
-{int [] sum=new int[array.GetLength(1)];
+
+{Console.WriteLine("Промежуточные суммы построчно");
+ int [] sum=new int[array.GetLength(1)];
  
  for (int i=0; i<array.GetLength(0); i++)
   { 
@@ -24,14 +26,15 @@ int [] GetAverage(int[,] array)
         sum[j]=sum[j]+array[i,j];
         Console.Write(sum[j]+" ");
     }
-  Console.WriteLine();
- /* for (int j=0; j<array.GetLength(0); j++)
+   Console.WriteLine();
+
+  }
+  Console.WriteLine("Среднее арифметическое для каждого столбца:");
+  for (int j=0; j<array.GetLength(1); j++)
     { 
         sum[j]=sum[j]/array.GetLength(0);
         Console.Write(sum[j]+" ");
-    }*/
-
-  }
+    }
  return sum;
 }
 Console.WriteLine("Введите M:");
@@ -41,4 +44,3 @@ int n=Convert.ToInt32(Console.ReadLine());
 int [,] array=new int[m,n];
 FillArrayRandom(array);
 int [] Average=GetAverage(array);
-Console.WriteLine($"Среднее арифметическое для каждого столбца: {Average}");
